@@ -35,12 +35,11 @@ Automated pneumonia detection using a **Convolutional Neural Network (CNN)** tra
 ### Step 2: Organize Data
 python copy_images.py
 
-text
+
 
 ### Step 3: Train Model
 python train_model.py
 
-text
 
 **Output:** `pneumonia_model.h5` + `training_results.png`
 
@@ -58,7 +57,6 @@ PNEUMONIA_DETECT/
 ├── normal/ (30 images)
 └── pneumonia/ (30 images)
 
-text
 
 ## 💡 Technologies
 
