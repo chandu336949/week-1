@@ -1,97 +1,86 @@
-# Pneumonia Detection from Chest X-Ray Images Using Deep Learning
+# 🫁 Pneumonia Detection CNN
 
-A deep learning project that automatically detects **Pneumonia** from **Chest X-Ray images** using **Convolutional Neural Networks (CNNs)**, assisting radiologists and healthcare professionals in early and accurate diagnosis.
-
----
-
-## 🩺 Overview
-
-Pneumonia is a serious lung infection and a major cause of hospitalization among children and elderly individuals worldwide. Early detection plays a vital role in improving recovery outcomes.
-
-This project aims to build an AI model capable of analyzing chest X-ray scans and classifying them into:
-
-* ✅ **Normal**
-* ⚠️ **Pneumonia**
+**Detect pneumonia from chest X-rays using AI**
 
 ---
 
-## 🎯 Problem Statement
+## 🎯 Project Overview
 
-Develop a robust deep learning model to classify chest X-ray images as either **Pneumonia** or **Normal**, helping in early screening and reducing diagnostic delays.
+Automated pneumonia detection using a **Convolutional Neural Network (CNN)** trained on chest X-ray images. Classifies X-rays as **Normal** or **Pneumonia** with ~87% accuracy.
 
----
-
-## 📂 Dataset
-
-* **Source:** Kaggle – Chest X-Ray Images (Pneumonia)
-* **Size:** 5,800+ X-ray images
-* **Classes:** Pneumonia & Normal
-* **Split:** Train / Validation / Test
-
-> The dataset includes pediatric patient X-ray scans with verified labels.
+**Key Features:**
+- ⚡ Lightweight (CPU-friendly, no GPU needed)
+- 🚀 Fast inference (~milliseconds per image)
+- 📚 Perfect learning project for deep learning basics
+- 🎓 Great for placement portfolio
 
 ---
 
-## 🧠 Approach
+## 📊 Dataset & Model
 
-1. **Image Preprocessing**
-
-   * Resizing, normalization
-   * Data augmentation for better generalization
-
-2. **Model Architecture**
-
-   * Convolutional Neural Networks (CNNs)
-   * Transfer learning (optional: VGG16, ResNet, EfficientNet)
-
-3. **Training**
-
-   * Loss minimization with Adam optimizer
-   * Batch training + validation monitoring
-
-4. **Evaluation Metrics**
-
-   * Accuracy
-   * Precision, Recall, F1-score
-   * Confusion matrix
-
-5. **Explainability**
-
-   * **Grad-CAM** visualizations to highlight affected regions on X-rays
+| Aspect | Details |
+|--------|---------|
+| **Dataset** | Kaggle Chest X-Ray (240 training + 60 test) |
+| **Model** | 2-layer CNN (16 → 32 filters) |
+| **Accuracy** | ~87% |
+| **Framework** | TensorFlow/Keras |
+| **Training Time** | ~10 minutes (CPU) |
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🚀 Quick Start
 
-| Category    | Tools                      |
-| ----------- | -------------------------- |
-| Language    | Python                     |
-| Libraries   | TensorFlow/Keras / PyTorch |
-| Environment | Jupyter Notebook           |
-| Hardware    | GPU recommended            |
+### Step 1: Install
 
+### Step 2: Organize Data
+python copy_images.py
 
+text
 
-## 🌍 Impact
+### Step 3: Train Model
+python train_model.py
 
-* Faster pneumonia early‑screening
-* Reduced workload on radiologists
-* Scalable for hospital environments
-* Can evolve into broader medical imaging AI system
+text
+
+**Output:** `pneumonia_model.h5` + `training_results.png`
 
 ---
 
-## 🔗 References
+## 📁 Structure
 
-* Kaggle Dataset: *Chest X-Ray Images (Pneumonia)*
-* Research papers on deep learning for medical imaging
-* Explainable AI tutorials
+PNEUMONIA_DETECT/
+├── copy_images.py # Dataset organizer
+├── train_model.py # Training script
+├── train/
+│ ├── normal/ (120 images)
+│ └── pneumonia/ (120 images)
+└── test/
+├── normal/ (30 images)
+└── pneumonia/ (30 images)
+
+text
+
+## 💡 Technologies
+
+Python • TensorFlow • Keras • NumPy • Pandas • Matplotlib
+
+
+## 🔮 Future Improvements
+
+- Transfer Learning (ResNet) → 95%+ accuracy
+- Deploy as Flask web app
+- Grad-CAM visualizations
+- Multi-class classification
 
 ---
 
-## 🤝 Contribution
+## 📚 References
 
-Feel free to fork this repo, submit suggestions, or improve model performance!
+- [Kaggle Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
+- [TensorFlow Docs](https://tensorflow.org)
+- [CS231n CNN Guide](https://cs231n.github.io/)
 
 ---
 
+**Built for learning & placements 🚀**  
+GitHub: [@chandu336949](https://github.com/chandu336949)
