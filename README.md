@@ -45,17 +45,7 @@ python train_model.py
 
 ---
 
-## 📁 Structure
 
-PNEUMONIA_DETECT/
-├── copy_images.py # Dataset organizer
-├── train_model.py # Training script
-├── train/
-│ ├── normal/ (120 images)
-│ └── pneumonia/ (120 images)
-└── test/
-├── normal/ (30 images)
-└── pneumonia/ (30 images)
 
 
 ## 💡 Technologies
